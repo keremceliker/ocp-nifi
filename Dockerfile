@@ -8,9 +8,9 @@ RUN ls -l /home/jboss
 # We need to change file ownership in order to run with unprivileged
 # owner.
 USER root
-RUN chown -R jboss:jboss /home/jboss/nifi-1.4.0
+RUN chown -R jboss:jboss /home/jboss
 USER jboss
 
 EXPOSE 8080
 
-CMD /home/jboss/nifi-1.4.0/bin/nifi.sh run
+CMD /home/jboss/bin/nifi.sh run
