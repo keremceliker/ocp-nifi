@@ -13,4 +13,4 @@ USER jboss
 
 EXPOSE 8080
 
-CMD /home/jboss/bin/nifi.sh run
+CMD sudo /home/jboss/bin/nifi.sh run
